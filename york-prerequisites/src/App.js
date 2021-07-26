@@ -2,10 +2,12 @@ import "./App.css";
 import Courses from "./Courses";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import About from "./components/About";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
-    <div>
+    <div className="page-container">
+    <div className="content-wrap">
     <Router>
       
         <Navbar />
@@ -17,17 +19,11 @@ function App() {
         
       
     </Router>
+    </div>
     <Footer />
     </div>
   );
 }
-
-const About = () => {
-  return (
-    <div>hi there</div>
-  );
-}
-
 
 const Contact = () => {
   return (

@@ -1,0 +1,23 @@
+.col{
+    justify-content: space-evenly; 
+}
+
+.container {
+    width: 100%;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background-color: #e31836;
+    /* position: relative; */
+    /* bottom: 0; */
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
