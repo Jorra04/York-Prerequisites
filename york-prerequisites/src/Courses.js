@@ -3,7 +3,7 @@ import CourseInfo from "./CourseInfo";
 import "./Courses.css";
 
 const Teams = () => {
-  const exampleReq = `http://yorkapi-env.eba-fi5ekpb4.us-east-2.elasticbeanstalk.com/courses`;
+  const request = `http://yorkapi-env.eba-fi5ekpb4.us-east-2.elasticbeanstalk.com/courses`;
   const [teams, setTeams] = useState([]);
   const [teamsOriginal, setTeamsOriginal] = useState([]);
 
@@ -12,7 +12,7 @@ const Teams = () => {
   useEffect(() => {
 
     const getData = async () => {
-      const resp = await fetch(exampleReq);
+      const resp = await fetch(request);
       const data = await resp.json();
       setTeams(data.courses);
       setTeamsOriginal(data.courses);

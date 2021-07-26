@@ -1,6 +1,6 @@
 .App {
     min-height: 100vh;
-    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
   }
 
   
@@ -26,7 +26,7 @@
     border-radius: 10px;
     height: 25px;
     outline: none;
-    border: transparent;
+    border: 2px solid black;
   }
 
   
