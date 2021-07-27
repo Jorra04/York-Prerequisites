@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import "../App.css";
 import { Link } from "react-router-dom";
 import logo from "../YorkuLogoLion.png";
@@ -16,7 +15,7 @@ const Navbar = () => {
         </Link>
 
         <Link className="navbar-links" to="/contact">
-          <li>contact</li>
+          <li>Contact</li>
         </Link>
       </div>
     </div>

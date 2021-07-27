@@ -1,10 +1,10 @@
 
 body {
-  
   background-color: #f8f8ff;
-    background-image: -webkit-linear-gradient(140deg, #f8f8ff 80%, #e31836 80%);
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: -webkit-linear-gradient(140deg, #f8f8ff 80%, #e31836 80%);
+  background-repeat: no-repeat;
+  height: 100vh;
+    
 
 
     margin: 0;
