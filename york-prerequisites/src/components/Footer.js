@@ -11,8 +11,9 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <p className="col-sm">
-              &copy;{new Date().getFullYear()} Jorra Singh | All rights reserved | {}
-              <Link className="footer-links" to="/contact">Terms Of Service</Link> | <Link className="footer-links" to="/">Privacy</Link>
+              &copy;{new Date().getFullYear()} Jorra Singh | All rights reserved | { }
+              <Link className="footer-links" to="/TermsOfService">Terms Of Service</Link> { }
+              | <Link className="footer-links" to="/privacy">Privacy</Link>
             </p>
           </div>
         </div>

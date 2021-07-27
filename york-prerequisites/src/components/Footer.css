@@ -25,6 +25,7 @@
     color: black;
 }
 
-.footer-links :hover {
+.footer-links:hover {
     text-decoration: underline;
+    
 }
