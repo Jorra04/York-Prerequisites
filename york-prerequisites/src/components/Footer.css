@@ -3,16 +3,13 @@
 }
 
 .container {
-    width: 100%;
+    width: 80%;
+    border-top: 1px solid #D9D9DB;
 }
 
 .main-footer {
     display: flex;
     justify-content: space-evenly;
-    color: white;
-    background-color: #e31836;
-    /* position: relative; */
-    /* bottom: 0; */
     width: 100%;
 }
 
@@ -20,4 +17,14 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+
+
+.footer-links {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-links :hover {
+    text-decoration: underline;
 }
