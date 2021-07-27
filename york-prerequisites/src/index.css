@@ -4,6 +4,7 @@ body {
   background-image: -webkit-linear-gradient(140deg, #f8f8ff 80%, #e31836 80%);
   background-repeat: no-repeat;
   height: 100vh;
+  width: 100vw;
   background-size: 100vw;
 
 
