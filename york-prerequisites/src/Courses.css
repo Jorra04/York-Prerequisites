@@ -1,6 +1,5 @@
 .App {
-    min-height: 100vh;
-    /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+  
   }
 
   
@@ -9,24 +8,43 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 70%;
     justify-content: space-evenly;
 
   }
 
 
   .search {
-    padding: 1%;
+    padding-top: 1%;
+    padding-bottom: 3%;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .search-bar {
-    width: 50%;
+    width: 30%;
     border-radius: 10px;
     height: 25px;
     outline: none;
     border: 2px solid black;
+  }
+
+
+  .search-button {
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 30px;
+    width: 75px;
+    outline: none;
+    border: 2px solid black;
+    transition-duration: 1s;
+  }
+
+  .search-button:hover {
+    cursor: pointer;
+    background-color: #e31836;
+    
   }
 
   

@@ -4,11 +4,11 @@ import "./Contact.css"
 const About = () => {
   return (
     <div className="body">
-      <div class="header" id="header">
+      <div className="header" id="header">
         <h1>About this App</h1>
       </div>
-      <div class="paragraphs">
-            <div class="first-paragraph">
+      <div className="paragraphs">
+            <div className="first-paragraph">
                 <h1>What is the purpose of this app?</h1>
                 <p>The purpose of this web app is to help students easily see both prerequisites for a given course and
                     to see what courses depend on a given course. This information was pulled from the 2021 FW course
@@ -16,7 +16,7 @@ const About = () => {
                     would advise each and every user to do their own research to see the exact relationship between
                     courses.</p>
             </div>
-            <div class="second-paragraph">
+            <div className="second-paragraph">
                 <h1>Who is this app for?</h1>
                 <p>This application is for any EECS, ESSE, or ENG student who would like to get a quick glimpse of what
                     the relationship is for a given course. It can tell you the prerequisites for a course or it can
@@ -25,7 +25,7 @@ const About = () => {
                     classes. I would strongly recommend you use this application as a road map and then validate your
                     choices with information provided directly from York University.</p>
             </div>
-            <div class="third-paragraph">
+            <div className="third-paragraph">
                 <h1>Should you use this app to enrol in courses?</h1>
                 <p>This Web Application is in no way affiliated with York University nor is it affiliated with any of
                     the university’s faculties and therefore, should not be used as the sole resource to enrol in your

@@ -4,52 +4,61 @@ import "./Courses.css";
 
 const Teams = () => {
   const request = `http://yorkapi-env.eba-fi5ekpb4.us-east-2.elasticbeanstalk.com/courses`;
-  const [teams, setTeams] = useState([]);
-  const [teamsOriginal, setTeamsOriginal] = useState([]);
-
+  const [courses, setCourses] = useState([]);
+  const [allCourses, setAllCourses] = useState([]);
   const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
-
     const getData = async () => {
       const resp = await fetch(request);
       const data = await resp.json();
-      setTeams(data.courses);
-      setTeamsOriginal(data.courses);
+      setAllCourses(data.courses);
     };
-
-
     getData();
   }, []);
 
   const updateSearch = (e) => {
     setSearchText(e.target.value);
-    let newTeams = teamsOriginal.filter((team) => {
-      return team.course_id.toLowerCase().includes(e.target.value);
-    });
-
-    setTeams(newTeams);
   };
 
-  
+  const performSearch = () => {
+    let tempCourses = [];
+    if(searchText.length != 0) {
+      tempCourses = allCourses.filter((course) => {
+        return course.course_id.toLowerCase().includes(searchText);
+      });
+    } 
+    
+
+    setCourses(tempCourses);
+  };
+
+  const keyPressed = (e) => {
+    if (e.key === "Enter" || e.keyCode === 13) {
+      performSearch();
+    }
+  };
 
   return (
     <div className="App">
+      <div className="header" id="header">
+        <h1>Search For a Class...</h1>
+      </div>
       <div className="search">
         <input
           className="search-bar"
           type="text"
-          value={searchText}
           onChange={updateSearch}
+          onKeyDown={keyPressed}
         />
+        <button className="search-button">Button</button>
       </div>
-
       <div className="courses">
-        {teams.map((team) => (
+        {courses.map((course) => (
           <CourseInfo
-            key={team._id}
-            course_id={team.course_id}
-            prerequisites={team.prerequisites}
+            key={course._id}
+            course_id={course.course_id}
+            prerequisites={course.prerequisites}
           />
         ))}
       </div>
