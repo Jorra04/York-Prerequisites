@@ -1,11 +1,60 @@
-.paragraphs {
-    margin: auto;
-    width: 55%;
+.feedback-body{
+  align-items: center;
+  /* border: 2px solid rebeccapurple; */
+  width: fit-content;
+  margin: 0 auto;
+    
+}
 
-  }
+
+
+.name {
+  margin: 20px;
+  height: 3vh;
+  width: 20vw;
+}
+
+
+.email {
+  margin: 20px;
+  height: 3vh;
+  width: 20vw;
+}
+
+
+.feedback {
+  margin: 20px;
+  width: 20vw;
   
+}
+
+.submit-feedback{
   
-  /* Responsible for typing effect on h1 tags */
+  margin: auto;
+  width: 40%;
+  height: 2rem;
+  background-color: white;
+  display: block;
+
+  border-radius: 10px;
+  border: 2px solid black;
+  
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+
+.submit-feedback:hover {
+  background-color: #e31836;
+  color: white;
+  
+  transition-duration: 1s;
+ 
+}
+
 
 
   .header h1 {

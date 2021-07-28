@@ -2,7 +2,9 @@
   
   }
 
-  
+  .header {
+    font-family: "Cairo", sans-serif;
+  }
   
   .courses {
     margin: auto;
