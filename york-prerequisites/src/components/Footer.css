@@ -19,6 +19,9 @@
     justify-content: space-evenly;
 }
 
+.col-sm {
+    text-align: center
+}
 
 .footer-links {
     text-decoration: none;
