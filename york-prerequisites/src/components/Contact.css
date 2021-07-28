@@ -11,27 +11,28 @@
 .name {
   margin: 20px;
   height: 3vh;
-  width: 20vw;
+  width: 40vw;
 }
 
 
 .email {
   margin: 20px;
   height: 3vh;
-  width: 20vw;
+  width: 40vw;
 }
 
 
 .feedback {
   margin: 20px;
-  width: 20vw;
+  width: 40vw;
   
 }
 
 .submit-feedback{
   
   margin: auto;
-  width: 40%;
+  min-width: fit-content;
+  width: 20%;
   height: 2rem;
   background-color: white;
   display: block;
