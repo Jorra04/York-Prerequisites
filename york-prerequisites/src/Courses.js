@@ -51,7 +51,7 @@ const Teams = () => {
           onChange={updateSearch}
           onKeyDown={keyPressed}
         />
-        <button className="search-button">Button</button>
+        <button className="search-button">Search</button>
       </div>
       <div className="courses">
         {courses.map((course) => (
