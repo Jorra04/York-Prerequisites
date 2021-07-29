@@ -11,10 +11,11 @@ function App() {
   return (
     <Router>
       <div className="page-container">
+        <Navbar />
         <div className="content-wrap">
 
 
-          <Navbar />
+          
           <Switch>
             <Route path="/" exact component={Courses} />
             <Route path="/about" exact component={About} />

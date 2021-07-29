@@ -25,6 +25,10 @@
 }
 
 .content-wrap{
+    display: flex;
+    width: 100vw;
+
+    justify-content: center;
     flex: 1;
 }
 
