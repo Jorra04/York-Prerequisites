@@ -8,6 +8,9 @@ const Teams = () => {
   const [allCourses, setAllCourses] = useState([]);
   const [searchText, setSearchText] = useState("");
 
+
+  const [firstSearch, setFirstSearch] = useState(true);
+
   useEffect(() => {
     const getData = async () => {
       const resp = await fetch(request);
@@ -22,15 +25,19 @@ const Teams = () => {
   };
 
   const performSearch = () => {
+    if(firstSearch) {
+      setFirstSearch(false);
+    }
     let tempCourses = [];
     if(searchText.length != 0) {
       tempCourses = allCourses.filter((course) => {
         return course.course_id.toLowerCase().includes(searchText);
       });
-    } 
+      
+    }
     
-
     setCourses(tempCourses);
+
   };
 
   const keyPressed = (e) => {
@@ -51,19 +58,40 @@ const Teams = () => {
           onChange={updateSearch}
           onKeyDown={keyPressed}
         />
-        <button className="search-button">Search</button>
+        <button className="search-button" onClick={performSearch}>Search</button>
       </div>
       <div className="courses">
-        {courses.map((course) => (
-          <CourseInfo
-            key={course._id}
-            course_id={course.course_id}
-            prerequisites={course.prerequisites}
-          />
-        ))}
+        { courses.length != 0 ? <FoundCourses courses={courses}/> : !firstSearch ? <NoCoursesFound/> : <></> }
       </div>
     </div>
   );
 };
+
+
+
+const FoundCourses = ({courses}) => {
+  return (
+    courses.map((course) => (
+      <CourseInfo
+        key={course._id}
+        course_id={course.course_id}
+        prerequisites={course.prerequisites}
+      />
+    ))
+  );
+}
+
+const NoCoursesFound = () => {
+  return (
+    <div className="course-search-fail">
+      <h2 className="course-search-fail-title">
+        No Courses Match Your Search...
+      </h2>
+      <h4 className="course-search-fail-message">
+        Please refine your search, or contact us to report any shortcomings!
+      </h4>
+    </div>
+  );
+}
 
 export default Teams;
