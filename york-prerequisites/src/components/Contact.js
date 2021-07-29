@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Contact.css";
+import exitButton from "../exit.svg"
+import checkMark from "../checkmark.svg"
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -65,12 +67,17 @@ const ModalPart = ({ submitFeedback }) => {
   return (
     <div className="modal-container">
       <div className="modal-component">
-        <h1>Submitted Feedback!</h1>
-        <p>
-          Thank you for your feedback! We will take it under careful
-          consideration.
-        </p>
-        <button onClick={submitFeedback}>X</button>
+        <div className="button-div">
+          <img className="exit-button" src={exitButton} onClick={submitFeedback} alt="Exit button closing popup"></img>
+        </div>
+        <div className="content-div">
+          <h1>Submitted Feedback!</h1>
+          <p>
+            Thank you for your feedback! We will take it under careful
+            consideration.
+          </p>
+          <img className="success-checkmark" src={checkMark} onClick={submitFeedback} alt="Checkmark signifying the submission of feedback"></img>
+        </div>
       </div>
     </div>
   );
