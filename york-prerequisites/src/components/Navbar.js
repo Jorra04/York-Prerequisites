@@ -1,4 +1,4 @@
-import "../App.css";
+import "./Navbar.css";
 import { Link } from "react-router-dom";
 import logo from "../YorkuLogoLion.png";
 const Navbar = () => {

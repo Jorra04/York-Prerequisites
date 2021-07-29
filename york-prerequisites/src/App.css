@@ -1,23 +1,4 @@
 
-.navbar {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-}
-
-.navbar .left-side{
-    flex: 90%;
-    
-}
-
-.navbar .right-side{
-    flex: 10%;
-    list-style: none;
-    padding-right: 3%;
-    display: flex;
-    
-}
-
 .page-container {
     display: flex;
     flex-direction: column;
@@ -32,21 +13,3 @@
     flex: 1;
 }
 
-.logo{
-    padding-top: 10px;
-    margin: auto;
-    height: 75px;
-    padding-left: 10px;
-    
-}
-
-.navbar-links {
-    color: black;
-    padding-left: 20px;
-    font-size: large;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-decoration: none;
-    font-family: "Cairo", sans-serif;
-}
