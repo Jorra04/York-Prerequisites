@@ -29,7 +29,7 @@ const Teams = () => {
       setFirstSearch(false);
     }
     let tempCourses = [];
-    if(searchText.length != 0) {
+    if(searchText.length !== 0) {
       tempCourses = allCourses.filter((course) => {
         return course.course_id.toLowerCase().includes(searchText);
       });
@@ -61,7 +61,7 @@ const Teams = () => {
         <button className="search-button" onClick={performSearch}>Search</button>
       </div>
       <div className="courses">
-        { courses.length != 0 ? <FoundCourses courses={courses}/> : !firstSearch ? <NoCoursesFound/> : <></> }
+        { courses.length !== 0 ? <FoundCourses courses={courses}/> : !firstSearch ? <NoCoursesFound/> : <></> }
       </div>
     </div>
   );
