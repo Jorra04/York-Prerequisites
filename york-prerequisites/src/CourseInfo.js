@@ -22,6 +22,3 @@ const CourseInfo = ({ course_id, prerequisites }) => {
 
 
 export default CourseInfo;
-
-
-//<p className="prerequisites">Prerequisites: {prerequisites.join(', ')}</p>

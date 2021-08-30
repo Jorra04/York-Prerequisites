@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CourseInfo from "./CourseInfo";
 import "./Courses.css";
+import { Link } from "react-router-dom";
 
 const Teams = () => {
   const request = `http://yorkapi-env.eba-fi5ekpb4.us-east-2.elasticbeanstalk.com/courses`;
@@ -72,11 +73,13 @@ const Teams = () => {
 const FoundCourses = ({courses}) => {
   return (
     courses.map((course) => (
-      <CourseInfo
+      <Link className="coursePage" to="home">
+        <CourseInfo
         key={course._id}
         course_id={course.course_id}
         prerequisites={course.prerequisites}
-      />
+        />
+      </Link>
     ))
   );
 }
