@@ -15,6 +15,9 @@
 .course:hover {
     cursor: pointer;
     transform: scale(1.05);
+    
+    box-shadow: 0px 5px 20px #e31836;
+
 }
 
 

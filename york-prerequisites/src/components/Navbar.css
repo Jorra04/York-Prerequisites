@@ -1,7 +1,11 @@
 .navbar {
     width: 100%;
     height: fit-content;
-    display: flex;
+    display: flex; 
+    background-color: #e31837;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .navbar .left-side{
@@ -20,7 +24,7 @@
 .logo{
     padding-top: 10px;
     margin: auto;
-    height: 75px;
+    height: 45px;
     padding-left: 10px;
     
 }

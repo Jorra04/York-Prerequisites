@@ -3,9 +3,16 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
 }
 
-.content-wrap{
+.content-wrap{ 
+    background-image: url("./red-wave.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 40em;
+    margin-top: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     flex: 1;
@@ -26,12 +33,12 @@
 }
 
 .unknown-404-image-container {
-    /* flex: 65%; */
+
     flex-grow: initial;
 }
 
 .unknown-404-text-container {
-    /* flex:  35%; */
+
     flex-wrap: wrap;
 }
 

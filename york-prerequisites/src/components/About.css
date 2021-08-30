@@ -14,3 +14,8 @@
     letter-spacing: .01em; /* Adjust as needed */
     width: fit-content;
   }
+
+
+  .paragraphs h1, p{
+    text-align: center;
+  }

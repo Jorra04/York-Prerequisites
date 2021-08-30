@@ -31,7 +31,7 @@ const Teams = () => {
     let tempCourses = [];
     if(searchText.length !== 0) {
       tempCourses = allCourses.filter((course) => {
-        return course.course_id.toLowerCase().includes(searchText);
+        return course.course_id.toLowerCase().includes(searchText.toLowerCase());
       });
       
     }
