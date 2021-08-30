@@ -1,7 +1,6 @@
 .paragraphs {
     margin: auto;
     width: 55%;
-
   }
   
   
@@ -13,9 +12,14 @@
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .01em; /* Adjust as needed */
     width: fit-content;
+   
   }
 
 
   .paragraphs h1, p{
     text-align: center;
+  }
+
+  .paragraphs p {
+    font-weight: 500;
   }
