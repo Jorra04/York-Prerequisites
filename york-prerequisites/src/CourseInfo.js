@@ -6,8 +6,6 @@ const CourseInfo = ({ course_id, prerequisites }) => {
 
 
     useEffect(() => {
-      console.log(course_id);
-      console.log(prerequisites);
         setHasPrerequisites(!(prerequisites === undefined || prerequisites.length === 0))
       }, []);
 

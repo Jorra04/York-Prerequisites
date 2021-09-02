@@ -73,7 +73,7 @@ const Teams = () => {
 const FoundCourses = ({courses}) => {
   return (
     courses.map((course) => (
-      <Link className="coursePage" to="home">
+      <Link className="coursePage" to={`/courseDetail/${course.course_id.replace(/[0-9 ]/g, '')}/${course.course_id.replace(/[a-zA-z/ ]/g, '')}`}>
         <CourseInfo
         key={course._id}
         course_id={course.course_id}

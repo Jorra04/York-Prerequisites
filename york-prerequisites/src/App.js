@@ -27,7 +27,7 @@ function App() {
             <Route path="/contact" exact component={Contact} />
             <Route path="/privacy" exact component={Privacy} />
             <Route path="/TermsOfService" exact component={TermsOfService} />
-            <Route path="/home" exact component={CourseDetails} />
+            <Route path="/courseDetail/:faculty/:department/:course" exact component={CourseDetails} />
             <Route path="/404" component={My404Component} />
             <Redirect from="*" to="/404" />
           </Switch>
