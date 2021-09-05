@@ -1,0 +1,20 @@
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.loader-animation{
+    margin: 15%;
+  
+}
+
+.loader {
+    width: 30px;
+    height: 30px;
+    margin: 25% auto;
+    border-radius: 50%;
+    background: black;
+}
