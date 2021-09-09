@@ -10,7 +10,11 @@
     letter-spacing: .01em; /* Adjust as needed */
     width: fit-content;
     font-family: "Cairo", sans-serif;
-   
+  }
+
+  .about-paragraphs h1 {
+    font-family: "Cairo", sans-serif;
+    font-weight: 800;
   }
 
 
