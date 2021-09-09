@@ -10,7 +10,7 @@ const Privacy = () => {
         </div>
         <br />
         <div className="privacy-paragraphs">
-          <img className="privacy-image" src={privacyLock}/>
+          <img className="privacy-image" src={privacyLock} alt="privacy lock image"/>
 
           <div className="privacy-first-paragraph">
             <p>This application is <span className="privacy-paragraph-bold">does not</span> collect your information. This is simply a personal project that is designed to aid

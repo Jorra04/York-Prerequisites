@@ -47,7 +47,7 @@ const My404Component = () => {
           <p className="unknown-404-text-paragraph">The page you are looking for does not exist!</p>
         </div>
         <div className="unknown-404-image-container">
-          <img className="unknown-404-image" src={image_404}></img>
+          <img className="unknown-404-image" src={image_404} alt="404 image showing that the requested page does not exist"></img>
         </div>
       </div>
   );
