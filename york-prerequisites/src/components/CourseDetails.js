@@ -54,6 +54,9 @@ const CourseDetails = ({ match }) => {
 
 const CourseInformation = ({ name, courses, coursesReq }) => {
   try {
+    if(name === undefined) {
+      throw "Undefined Request."
+    }
     return (
       <>
         <div className="courseInformation">
