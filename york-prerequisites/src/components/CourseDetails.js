@@ -56,21 +56,21 @@ const CourseInformation = ({ name, courses, coursesReq }) => {
   try {
     return (
       <>
-        <div className="header">
-          <div>
+        <div className="courseInformation">
+          <div className="courseInformation-header">
             <h1>{name}</h1>
           </div>
-          <div className="otherStuff">
+          <div className="courseInformation-details">
             {courses === undefined || courses.length === 0 ? (
-              <h3 id="established"><span className="courseDetail-title">Prerequisites for {name}:</span>This Course Has No Prerequisites.</h3>
+              <h3 id="established"><span className="courseDetail-title">Prerequisites for {name}: </span>This Course Has No Prerequisites.</h3>
             ) : (
-              <h3 id="established"><span className="courseDetail-title">Prerequisites for {name}:</span> {courses.join(", ")}</h3>)}
+              <h3 id="established"><span className="courseDetail-title">Prerequisites for {name}: </span> {courses.join(", ")}</h3>)}
           </div>
-          <div className="otherStuff2">
+          <div className="courseInformation-details">
           {coursesReq === undefined || coursesReq.length === 0 ? (
-              <h3 id="established"><span className="courseDetail-title">Courses requiring {name}:</span>No courses require {name}.</h3>
+              <h3 id="established"><span className="courseDetail-title">Courses requiring {name}: </span>No courses require {name}.</h3>
             ) : (
-              <h3 id="established"><span className="courseDetail-title">Courses requiring {name}:</span> {coursesReq.join(", ")}</h3>)}
+              <h3 id="established"><span className="courseDetail-title">Courses requiring {name}: </span> {coursesReq.join(", ")}</h3>)}
           </div>
         </div>
       </>
