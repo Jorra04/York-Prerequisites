@@ -1,4 +1,7 @@
-
+.courseInformation{
+    display: flex;
+    flex-direction: column;
+}
 
 
 .expanded-course-info {
@@ -37,3 +40,8 @@
 .courseDetail-title {
     font-weight: bold;
 }
+
+.button-div {
+    display: flex;
+    justify-content: flex-end;
+  }

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import {
+  Link,
   Redirect,
 } from "react-router-dom";
+import exitButton from "../exit.svg"
 import LoadingScreen from "./Loading Screen/LoadingScreen";
 import "./CourseDetails.css"
 
@@ -54,15 +56,21 @@ const CourseDetails = ({ match }) => {
 
 const CourseInformation = ({ name, courses, coursesReq }) => {
   try {
-    if(name === undefined) {
+    if (name === undefined) {
       throw "Undefined Request."
     }
     return (
       <>
         <div className="courseInformation">
+          <div className="button-div">
+            <Link to="/">
+              <img className="exit-button" src={exitButton}  alt="Exit button closing popup"></img>
+            </Link>
+          </div>
           <div className="courseInformation-header">
             <h1>{name}</h1>
           </div>
+
           <div className="courseInformation-details">
             {courses === undefined || courses.length === 0 ? (
               <h3 id="established"><span className="courseDetail-title">Prerequisites for {name}: </span>This Course Has No Prerequisites.</h3>
@@ -70,14 +78,14 @@ const CourseInformation = ({ name, courses, coursesReq }) => {
               <h3 id="established"><span className="courseDetail-title">Prerequisites for {name}: </span> {courses.join(", ")}</h3>)}
           </div>
           <div className="courseInformation-details">
-          {coursesReq === undefined || coursesReq.length === 0 ? (
+            {coursesReq === undefined || coursesReq.length === 0 ? (
               <h3 id="established"><span className="courseDetail-title">Courses requiring {name}: </span>No courses require {name}.</h3>
             ) : (
               <h3 id="established"><span className="courseDetail-title">Courses requiring {name}: </span> {coursesReq.join(", ")}</h3>)}
           </div>
           <div className="courseInformation-disclaimer">
-              <p>*Please be aware that information on this page may be out of date. Please remember that this application
-                is not intended to be your sole tool when enrolling in courses, always do your due diligence.</p>
+            <p>*Please be aware that information on this page may be out of date. Please remember that this application
+              is not intended to be your sole tool when enrolling in courses, always do your due diligence.</p>
           </div>
         </div>
       </>
