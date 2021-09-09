@@ -3,12 +3,12 @@ import "./About.css"
 
 const About = () => {
   return (
-    <div className="body">
-      <div className="header" id="header">
+    <div className="about-body">
+      <div className="about-header" id="header">
         <h1>About this App</h1>
       </div>
-      <div className="paragraphs">
-            <div className="first-paragraph">
+      <div className="about-paragraphs">
+            <div className="about-first-paragraph">
                 <h1>What is the purpose of this app?</h1>
                 <p>The purpose of this web app is to help students easily see both prerequisites for a given course and
                     to see what courses depend on a given course. This information was pulled from the 2021 FW course
@@ -16,7 +16,7 @@ const About = () => {
                     would advise each and every user to do their own research to see the exact relationship between
                     courses.</p>
             </div>
-            <div className="second-paragraph">
+            <div className="about-second-paragraph">
                 <h1>Who is this app for?</h1>
                 <p>This application is for any EECS, ESSE, or ENG student who would like to get a quick glimpse of what
                     the relationship is for a given course. It can tell you the prerequisites for a course or it can
@@ -25,7 +25,7 @@ const About = () => {
                     classes. I would strongly recommend you use this application as a road map and then validate your
                     choices with information provided directly from York University.</p>
             </div>
-            <div className="third-paragraph">
+            <div className="about-third-paragraph">
                 <h1>Should you use this app to enrol in courses?</h1>
                 <p>This Web Application is in no way affiliated with York University nor is it affiliated with any of
                     the university’s faculties and therefore, should not be used as the sole resource to enrol in your
@@ -34,7 +34,7 @@ const About = () => {
                     be used as a guide to help students get an idea of what may be required of them without constantly
                     checking York Universities website. The Information was pulled from the 2021 FW schedule.</p>
             </div>
-            <div className="currently-supported">
+            <div className="about-currently-supported">
                 <h1>What does this application currently Support?</h1>
                 <p>Currently this application only supports EECS courses, however, we have plans to incorporate both
                     ESSE and ENG courses in the future. Please contact us if you have any suggestions on what other

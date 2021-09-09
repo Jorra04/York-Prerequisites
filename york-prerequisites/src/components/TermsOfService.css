@@ -1,0 +1,36 @@
+.terms-of-service-paragraphs {
+    margin: auto;
+    width: 55%;
+
+    
+  }
+
+  .terms-of-service-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .terms-of-service-header h1 {
+    
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .01em; /* Adjust as needed */
+    width: fit-content;
+    font-family: "Cairo", sans-serif;
+   
+  }
+
+
+  .terms-of-service-paragraphs h1, p{
+    text-align: center;
+  }
+
+  .terms-of-service-paragraphs p {
+    font-weight: 400;
+    font-size: large;
+  }
+
+  .terms-of-service-paragraph-bold {
+      font-weight: 500;
+  }
