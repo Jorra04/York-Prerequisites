@@ -1,17 +1,21 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import exitButton from "../exit.svg"
-import checkMark from "../checkmark.svg"
+import exitButton from "../images/exit.svg"
+import checkMark from "../images/checkmark.svg"
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const submitFeedback = () => {
+    //update submitted status.
     setSubmitted(!submitted);
-    //Probably set some email stuff up here...
   };
 
   return (
+    /*
+    if the submitted prop is false, we show the contact form
+    else, we show the successfully submitted screen.
+    */
     <>
       {!submitted ? (
         <ContactForm submitFeedback={submitFeedback} />
@@ -21,6 +25,10 @@ const Contact = () => {
     </>
   );
 };
+
+const sendEmail = () => {
+  //Send email here.
+}
 
 const ContactForm = ({ submitFeedback }) => {
   return (
@@ -54,7 +62,11 @@ const ContactForm = ({ submitFeedback }) => {
           ></textarea>
         </div>
         <div>
-          <button className="submit-feedback" onClick={submitFeedback}>
+          <button className="submit-feedback" onClick={() => {
+            submitFeedback();
+            sendEmail();
+
+          }}>
             Submit
           </button>
         </div>

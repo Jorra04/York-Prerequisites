@@ -6,7 +6,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import TermsOfService from "./components/TermsOfService";
 import Privacy from "./components/Privacy";
-import image_404 from "./404.png";
+import image_404 from "./images/404.png";
 import {
   BrowserRouter as Router,
   Switch,

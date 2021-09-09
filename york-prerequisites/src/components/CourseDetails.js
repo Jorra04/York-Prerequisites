@@ -3,7 +3,7 @@ import {
   Link,
   Redirect,
 } from "react-router-dom";
-import exitButton from "../exit.svg"
+import exitButton from "../images/exit.svg"
 import LoadingScreen from "./Loading Screen/LoadingScreen";
 import "./CourseDetails.css"
 
@@ -35,6 +35,10 @@ const CourseDetails = ({ match }) => {
 
   };
 
+  /*
+  Show the loading screen until we have successfully loaded all
+  the content we need to see.
+  */
   return (
     <>
       {loading ? (
@@ -53,7 +57,10 @@ const CourseDetails = ({ match }) => {
 
 
 
-
+/*
+Displays the course information, including the name of the course, prerequisites for the course,
+and courses that require the current course.
+*/
 const CourseInformation = ({ name, courses, coursesReq }) => {
   try {
     if (name === undefined) {

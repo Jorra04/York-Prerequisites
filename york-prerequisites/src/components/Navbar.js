@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import logo from "../YorkuLogoLion.png";
+import logo from "../images/YorkuLogoLion.png";
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -11,11 +11,11 @@ const Navbar = () => {
       </div>
       <div className="right-side">
         <Link className="navbar-links" to="/about">
-          <li>About</li>
+          About
         </Link>
 
         <Link className="navbar-links" to="/contact">
-          <li>Contact</li>
+          Contact
         </Link>
       </div>
     </div>
