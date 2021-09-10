@@ -13,7 +13,6 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import CourseInfo from "./CourseInfo";
 import CourseDetails from "./components/CourseDetails";
 function App() {
   return (

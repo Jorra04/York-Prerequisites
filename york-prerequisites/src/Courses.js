@@ -4,7 +4,7 @@ import "./Courses.css";
 import { Link } from "react-router-dom";
 
 const Teams = () => {
-  const request = `http://yorkapi-env.eba-fi5ekpb4.us-east-2.elasticbeanstalk.com/courses`;
+  const request = `https://prerequisitechecker-york.herokuapp.com/courses`;
   const [courses, setCourses] = useState([]);
   const [allCourses, setAllCourses] = useState([]);
   const [searchText, setSearchText] = useState("");

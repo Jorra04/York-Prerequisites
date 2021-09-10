@@ -19,12 +19,12 @@ const CourseDetails = ({ match }) => {
   const fetchCourse = async () => {
 
     const fetchedCourses = await fetch(
-      `http://yorkapi-env.eba-fi5ekpb4.us-east-2.elasticbeanstalk.com/prerequisites/coursesRequired/${match.params.faculty + "%2f" +
+      `https://prerequisitechecker-york.herokuapp.com/prerequisites/coursesRequired/${match.params.faculty + "%2f" +
       match.params.department}/${match.params.course}`
     );
 
     const fetchedRequiringCourses = await fetch(
-      `http://yorkapi-env.eba-fi5ekpb4.us-east-2.elasticbeanstalk.com/prerequisites/coursesRequiring/${match.params.faculty + "%2f" +
+      `https://prerequisitechecker-york.herokuapp.com/prerequisites/coursesRequiring/${match.params.faculty + "%2f" +
       match.params.department}/${match.params.course}`
     );
     const course1 = await fetchedCourses.json();
