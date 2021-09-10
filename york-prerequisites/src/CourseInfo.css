@@ -8,8 +8,7 @@
     min-width: fit-content;
     flex-direction: column;
     background-color: white;
-    transition: all .2s ease-in-out;
-   
+    transition: all .2s ease-in-out; 
 }
 
 .coursePage {
@@ -17,15 +16,11 @@
     color: black;
 }
 
-
 .course:hover {
     cursor: pointer;
     transform: scale(1.05);
-    
     box-shadow: 0px 5px 20px #e31836;
-
 }
-
 
 .course-id {
     text-align: center;

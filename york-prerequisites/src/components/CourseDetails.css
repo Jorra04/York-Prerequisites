@@ -3,7 +3,6 @@
     flex-direction: column;
 }
 
-
 .expanded-course-info {
     position: relative;
     border-radius: 10px;
@@ -27,7 +26,6 @@
     font-size: smaller;
 
 }
-
 
 .courseInformation-header {
     text-align: center;

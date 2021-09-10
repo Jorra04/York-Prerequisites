@@ -1,8 +1,6 @@
 .terms-of-service-paragraphs {
     margin: auto;
     width: 55%;
-
-    
   }
 
   .terms-of-service-image {
@@ -10,7 +8,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-
 
   .terms-of-service-header h1 {
     
@@ -20,7 +17,6 @@
     font-family: "Cairo", sans-serif;
    
   }
-
 
   .terms-of-service-paragraphs h1, p{
     text-align: center;

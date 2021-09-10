@@ -3,7 +3,6 @@
   margin-top: 5%;
   width: 100%;
   height: 100%;
-
 }
 
 .header {
@@ -16,10 +15,7 @@
     flex-wrap: wrap;
     width: 70%;
     justify-content: space-evenly;
-    
-
   }
-
 
   .search {
     padding-top: 1%;
@@ -37,7 +33,6 @@
     border: 2px solid black;
   }
 
-
   .search-button {
     margin-left: 10px;
     border-radius: 10px;
@@ -51,9 +46,9 @@
   .search-button:hover {
     cursor: pointer;
     background-color: #e31836;
+    color: white;
     
   }
-
 
   .course-search-fail-title{
     text-align: center;
@@ -62,6 +57,3 @@
   .course-search-fail-message{
     text-align: center;
   }
-
-  
-  

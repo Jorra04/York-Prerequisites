@@ -52,7 +52,4 @@ const My404Component = () => {
   );
 };
 
-
-
-
 export default App;

@@ -20,5 +20,4 @@ const CourseInfo = ({ course_id, prerequisites }) => {
     );
   };
 
-
 export default CourseInfo;

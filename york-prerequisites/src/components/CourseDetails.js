@@ -56,7 +56,6 @@ const CourseDetails = ({ match }) => {
 };
 
 
-
 /*
 Displays the course information, including the name of the course, prerequisites for the course,
 and courses that require the current course.
