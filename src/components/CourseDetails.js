@@ -89,11 +89,13 @@ const CourseInformation = ({ name, courses, coursesReq }) => {
             ) : (
               <h3 id="established"><span className="courseDetail-title">Courses requiring {name}: </span> {coursesReq.join(", ")}</h3>)}
           </div>
-          <div className="courseInformation-disclaimer">
+        </div>
+        <div className="courseInformation-disclaimer">
+            <div>
             <p>*Please be aware that information on this page may be out of date. Please remember that this application
               is not intended to be your sole tool when enrolling in courses, always do your due diligence.</p>
+            </div>
           </div>
-        </div>
       </>
     );
   } catch (err) {

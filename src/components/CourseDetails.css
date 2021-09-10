@@ -1,32 +1,29 @@
 .courseInformation{
     display: flex;
     flex-direction: column;
+    height: 100%;
+ 
 }
 
 .expanded-course-info {
-    position: relative;
     border-radius: 10px;
     box-shadow: 0px 5px 20px rgb(71, 71, 71);
-    margin: 25px;
+    margin: 2rem;
     padding: 2rem;
     display: flex;
     width: 65%;
     min-width: min-content;
+    min-height: min-content;
     flex-direction: column;
     background-color: white;
     transition: all .2s ease-in-out;
-    
 }
 
 .courseInformation-disclaimer {
-    position: absolute;
-	bottom: 0;
-	left: 0;
-    margin: 25px;
+    display: flex;
     font-size: smaller;
-
+    
 }
-
 .courseInformation-header {
     text-align: center;
     font-family: "Cairo", sans-serif;
