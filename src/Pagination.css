@@ -1,0 +1,33 @@
+.page-item {
+    display:inline;
+    
+}
+
+
+.pagination {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+.page-link {
+    cursor: pointer;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+
+.page-link:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+#active {
+    background-color: rgba(227, 24, 54, 1);
+    color: white;
+}
