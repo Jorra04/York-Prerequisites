@@ -60,22 +60,24 @@ const Teams = () => {
   };
 
   return (
-    <div className="App">
-      <div className="header" id="header">
-        <h1>Search For a Class...</h1>
+    <div className="App-container">
+      <div className="search-interface">
+        <div className="header" id="header">
+          <h1>Search For a Class...</h1>
+        </div>
+        <div className="search">
+          <input
+            className="search-bar"
+            type="text"
+            onChange={updateSearch}
+            onKeyDown={keyPressed}
+          />
+          <button className="search-button" onClick={performSearch}>
+            Search
+          </button>
+        </div>
       </div>
-      <div className="search">
-        <input
-          className="search-bar"
-          type="text"
-          onChange={updateSearch}
-          onKeyDown={keyPressed}
-        />
-        <button className="search-button" onClick={performSearch}>
-          Search
-        </button>
-      </div>
-      <div>
+      <div className="fetched-information">
         {courses.length !== 0 ? (
           <>
             <div className="courses">
