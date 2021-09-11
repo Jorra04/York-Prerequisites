@@ -18,7 +18,7 @@ const Privacy = () => {
             </p>
 
             <p>When using the <span className="privacy-paragraph-bold">Contact</span> feature of this application, your email may be stored so we can respond accordingly to
-            any comments or concerned, however, this information is never used for any other purposes.
+            any comments or concerns, however, this information is never used for any other purposes.
             </p>
           </div>
         </div>

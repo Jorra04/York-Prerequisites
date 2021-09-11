@@ -4,7 +4,8 @@
     margin: 25px;
     display: flex;
     width: 14rem;
-    /* height: 10rem; */
+    height: 10rem;
+    min-height: fit-content;
     min-width: fit-content;
     flex-direction: column;
     background-color: white;
@@ -27,5 +28,8 @@
 }
 
 .prerequisites {
-    padding-left: 3%;
+    text-align: center;
+    overflow: hidden;
+    padding-left: 5%;
+    padding-right: 5%;
 }
