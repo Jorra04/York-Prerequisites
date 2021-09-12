@@ -4,3 +4,9 @@ A web application designed to help students see the relationship between differe
 # Example Use
 ## Landing
 ![Landing Page](https://github.com/Jorra04/York-Prerequisites/blob/master/readme-images/landingPage.jpg?raw=true)
+
+## Searching for a Course
+![Searching for a course](https://github.com/Jorra04/York-Prerequisites/blob/master/readme-images/searchExample.jpg?raw=true)
+
+## Specific Courses
+![Searching for a course](https://github.com/Jorra04/York-Prerequisites/blob/master/readme-images/courseDesc.jpg?raw=true)
