@@ -10,7 +10,7 @@ const TermsOfService = () => {
         </div>
         <br />
         <div className="terms-of-service-paragraphs">
-          <img className="terms-of-service-image" src={contract} alt="contract image representing terms of service" />
+          <img className="terms-of-service-image" src={contract} alt="contract representing terms of service" />
           <br />
           <div className="terms-of-service-first-paragraph">
             <p>This application is in no way affiliated with York University &copy; or any other Univeristy (either Candian or International).
